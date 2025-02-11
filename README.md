@@ -56,5 +56,9 @@ kubectl apply -f prometheus-config.yaml
 kubectl apply -f prometheus-deployment.yaml
 
 
+![image](https://github.com/user-attachments/assets/40aa87aa-04b4-4ab5-8ca7-26a280df6ea2)
+
+
+
 
 ![Screenshot 2025-02-11 145726](https://github.com/user-attachments/assets/110e1266-3f28-4af1-a860-928c9ff30993)
