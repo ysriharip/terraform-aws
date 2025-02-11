@@ -32,3 +32,7 @@ Run `terraform plan` to see the configuration it creates when executed.
 ### Finally, Apply terraform configuation to create EKS cluster with VPC 
 
 `terraform apply`
+
+
+## We App Deployment
+Build a docker file for inginx web app
