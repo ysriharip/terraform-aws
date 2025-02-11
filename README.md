@@ -50,11 +50,15 @@ docker push 141136133910.dkr.ecr.us-west-1.amazonaws.com/hari-demo:latest
 ```
 kubectl apply -f nginx-deployment.yaml
 ```
+```
 kubectl apply -f nginx-exporter.yaml
+```
 ```
 kubectl apply -f prometheus-config.yaml
 ```
+```
 kubectl apply -f prometheus-deployment.yaml
+```
 ```
 kubectl apply -f nginx-loadbalancer.yaml
 ```
