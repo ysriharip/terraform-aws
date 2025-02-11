@@ -36,3 +36,7 @@ Run `terraform plan` to see the configuration it creates when executed.
 
 ## We App Deployment
 Build a docker file for inginx web app
+
+
+
+![Screenshot 2025-02-11 145726](https://github.com/user-attachments/assets/110e1266-3f28-4af1-a860-928c9ff30993)
