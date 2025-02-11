@@ -35,7 +35,24 @@ Run `terraform plan` to see the configuration it creates when executed.
 
 
 ## We App Deployment
-Build a docker file for inginx web app
+->Build a docker file for inginx web app
+
+docker build -t hari-demo:nginx-prom-new .
+
+docker tag hari-demo:nginx-prom-new 141136133910.dkr.ecr.us-west-1.amazonaws.com/hari-deme:nginx-prom-new
+
+docker push 141136133910.dkr.ecr.us-west-1.amazonaws.com/hari-demo:latest
+
+aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 141136133910.dkr.ecr.us-west-1.amazonaws.com
+
+
+## Deploy kubernetes Deployment manifest files and resources using kubectl CLI
+kubectl apply -f nginx-deployment.yaml
+kubectl apply -f nginx-exporter.yaml
+kubectl apply -f prometheus-config.yaml
+kubectl apply -f prometheus-deployment.yaml
+
+![image](https://github.com/user-attachments/assets/616fca15-c046-48db-bce1-cc5857c2d0c5)
 
 
 
