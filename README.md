@@ -55,6 +55,8 @@ kubectl apply -f prometheus-config.yaml
 
 kubectl apply -f prometheus-deployment.yaml
 
+kubectl apply -f nginx-loadbalancer.yaml
+
 
 ![image](https://github.com/user-attachments/assets/40aa87aa-04b4-4ab5-8ca7-26a280df6ea2)
 
