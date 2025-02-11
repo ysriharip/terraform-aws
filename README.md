@@ -34,8 +34,9 @@ Run `terraform plan` to see the configuration it creates when executed.
 `terraform apply`
 
 
-## We App Deployment
-->Build a docker file for inginx web app
+## Build Inginx Docker Image and push to ECR
+
+aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 141136133910.dkr.ecr.us-west-1.amazonaws.com
 
 docker build -t hari-demo:nginx-prom-new .
 
@@ -43,7 +44,6 @@ docker tag hari-demo:nginx-prom-new 141136133910.dkr.ecr.us-west-1.amazonaws.com
 
 docker push 141136133910.dkr.ecr.us-west-1.amazonaws.com/hari-demo:latest
 
-aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin 141136133910.dkr.ecr.us-west-1.amazonaws.com
 
 
 ## Deploy kubernetes Deployment manifest files and resources using kubectl CLI
