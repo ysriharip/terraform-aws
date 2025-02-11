@@ -48,8 +48,11 @@ aws ecr get-login-password --region us-west-1 | docker login --username AWS --pa
 
 ## Deploy kubernetes Deployment manifest files and resources using kubectl CLI
 kubectl apply -f nginx-deployment.yaml
+
 kubectl apply -f nginx-exporter.yaml
+
 kubectl apply -f prometheus-config.yaml
+
 kubectl apply -f prometheus-deployment.yaml
 
 
