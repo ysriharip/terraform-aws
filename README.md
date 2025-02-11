@@ -47,16 +47,17 @@ docker push 141136133910.dkr.ecr.us-west-1.amazonaws.com/hari-demo:latest
 
 
 ## Deploy kubernetes Deployment manifest files and resources using kubectl CLI
+```
 kubectl apply -f nginx-deployment.yaml
-
+```
 kubectl apply -f nginx-exporter.yaml
-
+```
 kubectl apply -f prometheus-config.yaml
-
+```
 kubectl apply -f prometheus-deployment.yaml
-
+```
 kubectl apply -f nginx-loadbalancer.yaml
-
+```
 
 ![image](https://github.com/user-attachments/assets/40aa87aa-04b4-4ab5-8ca7-26a280df6ea2)
 
