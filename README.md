@@ -52,8 +52,6 @@ kubectl apply -f nginx-exporter.yaml
 kubectl apply -f prometheus-config.yaml
 kubectl apply -f prometheus-deployment.yaml
 
-![image](https://github.com/user-attachments/assets/616fca15-c046-48db-bce1-cc5857c2d0c5)
-
 
 
 ![Screenshot 2025-02-11 145726](https://github.com/user-attachments/assets/110e1266-3f28-4af1-a860-928c9ff30993)
